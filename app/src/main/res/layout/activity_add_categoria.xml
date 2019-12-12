@@ -1,0 +1,79 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clAddCategoria"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCategoria">
+
+    <ImageView
+        android:id="@+id/ivCrearCategoria"
+        style="@style/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/guidelinetd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/burguer54dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinetd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textAddCategoria"
+        app:layout_constraintGuide_percent="0.47"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_percent="0.81"
+        app:layout_constraintTop_toBottomOf="@+id/btCrearCategoria" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btCrearCategoria"
+        style="@style/buttonCrear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/crear_categoria"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="@+id/textAddCategoria"
+        app:layout_constraintStart_toStartOf="@+id/textAddCategoria"
+        app:layout_constraintTop_toBottomOf="@+id/textAddCategoria" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textAddCategoria"
+        style="@style/textInputCrear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre_categoria"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toTopOf="@+id/btCrearCategoria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guidelinetd">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNombreCrearCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <fragment
+        android:id="@+id/fAddCategoria"
+        android:name="com.example.comandaspt1.Fragment.Carga"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

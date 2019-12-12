@@ -1,0 +1,169 @@
+<resources>
+    <string name="app_name">Zaidín Gourmet</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="error">Usuario o contraseña incorrectos</string>
+    <string name="vacio">Rellene los campos</string>
+    <string name="nodata">No se han encontrado datos en el servidor</string>
+    <string name="conexion">Introduzca la parte dinámica de la URL</string>
+    <string name="conexionbt">Conectar</string>
+    <string name="labelconexion">Conexión</string>
+    <string name="titulomesas">Mesas</string>
+    <string name="cerrarsesion">Cerrar Sesión</string>
+    <string name="title_activity_mesas_gerente">MesasGerente</string>
+    <string name="tituloMesasGerente">Disposiciones</string>
+    <string name="contraseña">Contraseña</string>
+
+    <string name="dialogoTitulo">Eliminar elemento seleccionado</string>
+    <string name="dialogoMensaje">¿Seguro que quiere eliminar permanentemenete este elemento?</string>
+    <string name="confirmacion">Sí</string>
+    <string name="cancelar">No</string>
+
+    <!--Impresion-->
+    <string name="factura">Factura</string>
+    <string name="dialogoTituloImpresion">Finalizar factura</string>
+    <string name="dialogoMensajeImpresion">¿Seguro que quiere cerrar esta factura permanentemente?</string>
+
+    <string name="empleadosGerente">Empleados</string>
+    <string name="nuevoEmpleado">Nuevo Empleado</string>
+    <string name="addMesa">Nueva Mesa</string>
+    <string name="addEmpleado">Nuevo Empleado</string>
+    <string name="editMesa">Editar Mesa</string>
+    <string name="editEmpleado">Editar empleado</string>
+    <string name="empleadoSingle">Empleado</string>
+
+    <string name="noCoinciden">Debe repetir correctamente la contraseña</string>
+
+    <!--MandarCorreo-->
+    <string name="emailContactos">Email de mis contactos</string>
+    <string name="para_quien">para quien</string>
+    <string name="subject">subject</string>
+    <string name="enviar_correo">enviar correo</string>
+    <string name="subjet">subjet</string>
+    <string name="t">to</string>
+
+
+    <string name="tituloExplicacion">Advertencia</string>
+    <string name="mensajeExplicacion">Si no proporcionas permiso para leer contactos no podemos mostrar los correos.</string>
+    <string name="tituloExplicacion2">Lo necesito</string>
+    <string name="mensajeExplicacion2">Lo necesito</string>
+    <string name="title_activity_ajustes">Ajustes</string>
+    <string name="respNo">No</string>
+    <string name="respSi">Sí</string>
+
+    <!--Comandas-->
+    <string name="cambiarComanda">CAMBIAR COMANDA</string>
+    <string name="crearComanda">CREAR COMANDA</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="passwordHelp">Click the eye to see your password</string>
+    <string name="login">Login</string>
+
+    <!-- Error Strings-->
+    <!--Username-->
+    <string name="emptyUsername">¡No puedes dejar el campo usuario vacío!</string>
+    <string name="noMatch">El usuario o la contraseña no coinciden</string>
+    <!--Password-->
+    <string name="emptyPassword">¡No puedes dejar el campo contraseña vacío!</string>
+    <!--Strings Nacho-->
+    <string name="nombre">Nombre</string>
+    <string name="gerente">Gerente</string>
+    <string name="crear_empleado">Crear empleado</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="nombre_de_usuario">Nombre de usuario</string>
+    <string name="passwordNacho">Password</string>
+    <string name="repeat">Repeat</string>
+    <string name="telefono">Telefono</string>
+    <string name="editar_empleado">Editar empleado</string>
+    <string name="numero">Número</string>
+    <string name="crear_mesa">Crear mesa</string>
+    <string name="editar_mesa">Editar mesa</string>
+    <string name="id">Id</string>
+    <string name="crear_categoria">Crear categoria</string>
+    <string name="editar_categoria">Editar categoria</string>
+    <string name="precio">Precio (€)</string>
+    <string name="id_categoria">Id categoria</string>
+    <string name="descripci_n">Descripción</string>
+    <string name="destino">Destino</string>
+    <string name="barra">Barra</string>
+    <string name="cocina">Cocina</string>
+    <string name="editar_producto">Editar producto</string>
+    <string name="crear_producto">Crear producto</string>
+    <string name="opcion_seleccionada">Opcion seleccionada</string>
+    <string name="zero">0</string>
+    <string name="servicio_tecnico">Servicio Técnico</string>
+    <string name="conexionIcon">Conexión</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="editarComanda">Editar Comanda</string>
+    <string name="recordar">Recordar</string>
+    <string name="restaurante">Zaidín Gourmet</string>
+    <string name="passwordLength">Contraseña demasiado larga</string>
+    <string name="mesa">Mesa nº:</string>
+
+    <string name="title_activity_add_categoria">AddCategoria</string>
+    <string name="nombreC">Categoria</string>
+    <string name="errorNombreC">¡Tienes que ponerle un nombre a la categoria!</string>
+    <string name="errorFotoC">¡Tienes que elegir una foto para la categoria!</string>
+
+    <!--CategoriaAdapter-->
+    <string name="titleBorrarC">Borrar Categoria</string>
+    <string name="mensajeBorrarC">¿Estas seguro de que quieres borrar esta categoria?</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="title_activity_edit_categoria">EditCategoria</string>
+
+    <string name="titleEditarC">Editar Categoria</string>
+    <string name="mensajeEditarC">¿Estas seguro de que quieres editar esta categoria?</string>
+
+
+    <string name="title_activity_ver_productos">Ver Productos</string>
+    <string name="nombre_producto">Nombre</string>
+    <string name="nueva_categoria">Nueva Categoria</string>
+    <string name="nombre_categoria">Nombre Categoria</string>
+    <string name="añadir_comanda">Añadir a la factura</string>
+    <string name="nuevo_producto">Nuevo Producto</string>
+    <string name="Detalle_producto">Detalle producto</string>
+    <string name="Editar_Producto">Editar Producto</string>
+    <string name="Editar_Categoria">Editar Categoria</string>
+    <string name="productos">Productos</string>
+    <string name="categorriasLabel">Categorias</string>
+    <string name="Añadir_Categoria">Añadir Categoria</string>
+    <string name="Añadir_Producto">Añadir Producto</string>
+    <string name="disponible">Disponible</string>
+
+    <!--ERRORES DE ESPERA-->
+    <string name="errorAddC">No se ha podido añadir la categoria</string>
+    <string name="errorEditC">No se ha podido editar la categoria</string>
+    <string name="errorAddP">No se ha podido añadir el producto</string>
+    <string name="errorEditP">No se ha podido editar el producto</string>
+    <string name="errorAddM">No se ha podido añadir la mesa</string>
+    <string name="errorEditM">No se ha podido editar la mesa</string>
+    <string name="errorAddE">No se ha podido añadir el empleado</string>
+    <string name="errorEditE">No se ha podido editar el empleado</string>
+    <string name="errorFotoGeneral">No se ha podido subir la fotografia</string>
+
+    <!--SUCCESS DE ESPERA-->
+    <string name="successAddC">Se ha añadido una nueva categoria</string>
+    <string name="successEditC">Se ha editado la categoria con éxito</string>
+    <string name="successAddP">Se ha añadido un nuevo producto</string>
+    <string name="successEditP">Se ha editado el producto con éxito</string>
+    <string name="successAddM">Se ha añadido una nueva mesa</string>
+    <string name="successEditM">Se ha editado la mesa con éxito</string>
+    <string name="successAddE">Se ha añadido un nuevo empleado</string>
+    <string name="successEditE">Se ha editado un empleado con éxito</string>
+
+    <!--MENSAJES DIALOGOS FACTURAS-->
+    <string name="facturaTitulo">Iniciar una factura</string>
+    <string name="facturaMensaje">¿Desea comenzar una factura para la mesa seleccionada?</string>
+    <string name="facturaLabel">Factura</string>
+    <string name="addComanda">Añadir comanda</string>
+    <string name="createComanda">Crear comanda</string>
+    <string name="unidades_n">Unidades</string>
+    <string name="comandaLabel">Comanda</string>
+    <string name="comandaEdit">Editar Comanda</string>
+    <string name="factura_titulo">Factura</string>
+    <string name="comanda_error">No se puede imprimir una factura debido a que hay comandas no entregadas</string>
+
+</resources>

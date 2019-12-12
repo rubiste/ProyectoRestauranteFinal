@@ -1,0 +1,144 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.Button.OutlinedButton.MedioEmfasis">
+        <item name="strokeColor">@color/colorPrimary</item>
+        <item name="backgroundTint">@color/colorSecondary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="cornerRadius">10dp</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.Button.TextButton.SinEmfasis">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="margenAbajo">
+        <item name="android:layout_marginBottom">@dimen/marginAbajo12</item>
+    </style>
+
+    <style name="margenDerecha">
+        <item name="android:layout_marginEnd">@dimen/marginAbajo12</item>
+    </style>
+
+    <style name="margenIzquierda">
+        <item name="android:layout_marginStart">@dimen/marginAbajo12</item>
+    </style>
+
+    <style name="cardView" parent="margenAbajo.margenArriba">
+        <item name="android:layout_marginBottom">@dimen/marginAbajo12</item>
+        <item name="android:layout_marginLeft">@dimen/marginLados</item>
+        <item name="android:layout_marginRight">@dimen/marginLados</item>
+    </style>
+
+    <style name="marginBotonesDerecha">
+        <item name="layout_constraintGuide_percent">0.85</item>
+    </style>
+
+    <style name="margenSearchViews">
+        <item name="android:layout_marginEnd">@dimen/marginAbajo12</item>
+        <item name="android:layout_marginStart">@dimen/marginAbajo12</item>
+    </style>
+
+    <style name="margenAbajo.margenArriba">
+        <item name="android:layout_marginTop">@dimen/marginAbajo12</item>
+    </style>
+
+    <style name="margenTodo" parent="margenAbajo.margenArriba">
+        <item name="android:layout_marginEnd">@dimen/marginAbajo12</item>
+    </style>
+
+
+    <!--TEXTFIELDS-->
+    <style name="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Pass">
+        <item name="boxStrokeColor">@color/colorSecondary</item>
+        <item name="boxBackgroundColor">@color/white</item>
+    </style>
+
+
+    <!--Estilos Nacho-->
+    <style name="imageView" parent="Theme.MaterialComponents.Light">
+        <item name="android:layout_margin">@dimen/imgMargin</item>
+    </style>
+
+    <style name="textInputCrear" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:layout_marginBottom">@dimen/textInputMargin</item>
+        <item name="android:layout_marginTop">@dimen/textInputMargin</item>
+        <item name="android:layout_marginRight">@dimen/textInputRightLeft</item>
+        <item name="android:layout_marginLeft">@dimen/textInputRightLeft</item>
+    </style>
+
+    <style name="switchCrear" parent="@style/textInputCrear">
+
+        <item name="android:paddingLeft">@dimen/switchPadding</item>
+        <item name="android:paddingRight">@dimen/switchPadding</item>
+        <item name="android:checked">false</item>
+    </style>
+
+    <style name="buttonCrear" parent="@style/Widget.MaterialComponents.Button">
+
+        <item name="cornerRadius">@dimen/buttonCornerRadius</item>
+    </style>
+
+    <style name="fotoRound" parent="@style/imageView">
+        <item name="android:foreground">@drawable/rounded_shape</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="tvLogo">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/tvLogin</item>
+    </style>
+
+    <style name="tvLogoLandscape">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/tvLoginLandscape</item>
+    </style>
+
+    <style name="etNumbers">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:ems">2</item>
+        <item name="android:hint">@string/zero</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textSize">@dimen/numberSize</item>
+    </style>
+
+    <!--TEXT VIEW STYLES-->
+    <style name="tv30">
+        <item name="android:textSize">@dimen/textviews30</item>
+    </style>
+
+    <style name="tv24">
+        <item name="android:textSize">@dimen/textviews24</item>
+    </style>
+
+    <style name="tv18">
+        <item name="android:textSize">@dimen/textviews18</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="tv18.margenIzquierdaChico">
+        <item name="android:layout_marginStart">@dimen/margenIzquierdaChico</item>
+    </style>
+
+    <style name="tv24.margenIzquierdaChico">
+        <item name="android:layout_marginStart">@dimen/margenIzquierdaChico</item>
+    </style>
+
+    <style name="imageButton">
+        <item name="android:layout_margin">@dimen/margenIzquierdaChico</item>
+    </style>
+</resources>

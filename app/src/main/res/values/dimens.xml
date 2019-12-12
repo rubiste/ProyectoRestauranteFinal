@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="imgMargin">16dp</dimen>
+    <dimen name="textInputMargin">20dp</dimen>
+    <dimen name="textInputRightLeft">90dp</dimen>
+    <dimen name="switchPadding">25dp</dimen>
+    <dimen name="buttonMarginBottom">15dp</dimen>
+    <dimen name="buttonCornerRadius">20dp</dimen>
+    <dimen name="marginAbajo12">12dp</dimen>
+    <dimen name="marginLados">12dp</dimen>
+    <dimen name="tvLogin">50sp</dimen>
+    <dimen name="tvLoginLandscape">30sp</dimen>
+    <dimen name="numberSize">30sp</dimen>
+    <dimen name="textviews30">30sp</dimen>
+    <dimen name="textviews24">24sp</dimen>
+    <dimen name="textviews18">18sp</dimen>
+    <dimen name="margenIzquierdaChico">16dp</dimen>
+    <dimen name="radio24">24dp</dimen>
+</resources>

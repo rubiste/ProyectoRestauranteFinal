@@ -1,0 +1,154 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditComanda">
+
+    <fragment
+        android:id="@+id/fEditComanda"
+        android:name="com.example.comandaspt1.Fragment.Carga"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="700dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textProductoNombre"
+                style="@style/textInputCrear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nombre"
+                app:layout_constraintBottom_toTopOf="@+id/textProductoPrecio"
+                app:layout_constraintTop_toBottomOf="@+id/ivImagen"
+                tools:layout_editor_absoluteX="90dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/textProductoNombre"
+                app:layout_constraintGuide_percent="0.44"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivImagen"
+                style="@style/imageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@+id/guidelines"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/addbox54dp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textProductoDescripcion"
+                style="@style/textInputCrear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/descripci_n"
+                app:layout_constraintBottom_toTopOf="@+id/textProductoUnidades"
+                app:layout_constraintTop_toBottomOf="@+id/textProductoPrecio"
+                tools:layout_editor_absoluteX="90dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textProductoPrecio"
+                style="@style/textInputCrear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/precio"
+                android:inputType="number"
+                app:layout_constraintBottom_toTopOf="@+id/textProductoDescripcion"
+                app:layout_constraintTop_toBottomOf="@+id/textProductoNombre"
+                tools:layout_editor_absoluteX="90dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPrecio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintGuide_percent="0.9"
+                app:layout_constraintTop_toBottomOf="@+id/textProductoDescripcion" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btEditar"
+                style="@style/buttonCrear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/editarComanda"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textProductoUnidades" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textProductoUnidades"
+                style="@style/textInputCrear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/unidades_n"
+                app:endIconMode="clear_text"
+                app:layout_constraintBottom_toTopOf="@+id/btEditar"
+                app:layout_constraintTop_toBottomOf="@+id/textProductoDescripcion"
+                tools:layout_editor_absoluteX="90dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etUnidades"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

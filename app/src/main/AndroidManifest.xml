@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    package="com.example.comandaspt1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".MainImpresion"
+            android:label="@string/factura"
+            android:parentActivityName=".Facturas"
+            android:screenOrientation="locked"/>
+        <activity android:name=".MainProvider"
+            android:label="@string/enviar_correo"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".EditComanda"
+            android:label="@string/comandaEdit"
+            android:parentActivityName=".Facturas"/>
+        <activity
+            android:name=".Comanda"
+            android:label="@string/comandaLabel"
+            android:parentActivityName=".Facturas" />
+        <activity
+            android:name=".Facturas"
+            android:label="@string/facturaLabel"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:parentActivityName=".MesasLocal" />
+        <activity
+            android:name=".AddProducto"
+            android:label="@string/Añadir_Producto"
+            android:parentActivityName=".VerProductos" />
+        <activity
+            android:name=".AddCategoria"
+            android:label="@string/Añadir_Categoria"
+            android:parentActivityName=".Categorias" />
+        <activity
+            android:name=".SingleProducto"
+            android:label="@string/Detalle_producto" />
+        <activity
+            android:name=".EditProducto"
+            android:label="@string/Editar_Producto"
+            android:parentActivityName=".VerProductos" />
+        <activity
+            android:name=".EditCategoria"
+            android:label="@string/Editar_Categoria"
+            android:parentActivityName=".Categorias" />
+        <activity
+            android:name=".VerProductos"
+            android:label="@string/productos"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:parentActivityName=".Categorias" />
+        <activity
+            android:name=".Categorias"
+            android:label="@string/categorriasLabel"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:parentActivityName=".MesasLocal" />
+        <activity
+            android:name=".SingleEmpleadoGerente"
+            android:label="@string/empleadoSingle"
+            android:parentActivityName=".EmpleadosGerente" />
+        <activity
+            android:name=".AddEmpleadoGerente"
+            android:label="@string/addEmpleado"
+            android:parentActivityName=".EmpleadosGerente" />
+        <activity
+            android:name=".EditEmpleadoGerente"
+            android:label="@string/editEmpleado"
+            android:parentActivityName=".EmpleadosGerente" />
+        <activity
+            android:name=".EmpleadosGerente"
+            android:label="@string/empleadosGerente"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:parentActivityName=".MesasLocal" />
+        <activity
+            android:name=".EditMesaGerente"
+            android:label="@string/editMesa"
+            android:parentActivityName=".MesasGerente" />
+        <activity
+            android:name=".AddMesaGerente"
+            android:label="@string/addMesa"
+            android:parentActivityName=".MesasGerente" />
+        <activity
+            android:name=".MesasGerente"
+            android:label="@string/tituloMesasGerente"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:parentActivityName=".MesasLocal" />
+        <activity
+            android:name=".MesasLocal"
+            android:label="@string/titulomesas" />
+        <activity
+            android:name=".Conexion"
+            android:label="@string/labelconexion"
+            android:parentActivityName=".MainActivity"
+            app:titleTextColor="@color/white" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

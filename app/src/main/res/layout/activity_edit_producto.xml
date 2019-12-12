@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/fEditProducto"
+        android:name="com.example.comandaspt1.Fragment.Carga"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textProductoNombre"
+                style="@style/textInputCrear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nombre"
+                app:endIconMode="clear_text"
+                app:layout_constraintBottom_toTopOf="@+id/textProductoPrecio"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guidelines">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.39" />
+
+
+            <ImageView
+                android:id="@+id/ivEditarProducto"
+                style="@style/imageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/guidelines"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textProductoDescripcion"
+                style="@style/textInputCrear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/descripci_n"
+                app:endIconMode="clear_text"
+                app:layout_constraintBottom_toTopOf="@+id/btEditProducto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/material_buttonf">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textProductoPrecio"
+                style="@style/textInputCrear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/precio"
+                android:inputType="number"
+                app:endIconMode="clear_text"
+                app:layout_constraintBottom_toTopOf="@+id/material_buttonf"
+                app:layout_constraintTop_toBottomOf="@+id/textProductoNombre"
+                tools:layout_editor_absoluteX="90dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPrecio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/material_buttonf"
+                style="@style/buttonCrear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="showPopup"
+                android:text="@string/destino"
+                app:layout_constraintBottom_toTopOf="@+id/textProductoDescripcion"
+                app:layout_constraintStart_toStartOf="@+id/textProductoPrecio"
+                app:layout_constraintTop_toBottomOf="@+id/textProductoPrecio" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btEditProducto"
+                style="@style/buttonCrear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/editar_producto"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textProductoDescripcion" />
+
+            <TextView
+                android:id="@+id/tvDestino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/opcion_seleccionada"
+                app:layout_constraintBottom_toBottomOf="@+id/material_buttonf"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/material_buttonf"
+                app:layout_constraintTop_toTopOf="@+id/material_buttonf" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
